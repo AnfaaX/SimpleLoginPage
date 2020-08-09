@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="id">
+   <head>
+      <meta name="theme-color" content="#111111">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="@AnfaaMe">
+      <meta name="description" content="Simple Login Page V1">
+      <!--Link Stylesheet-->
+      <link rel="stylesheet" href="css/stylesheet.css">
+      
+      <title>Simple LoginPage V1</title>
+   </head>
+   
+   <body>
+
+      <div class="sheet" data-theme="light">
+         <div class="d-flex justify-content-center align-items-center">
+            
+            <form class="form" method="POST">
+               <h2 style="text-align:center;">Login Form</h2>
+               <hr>
+               <label for="mail">Alamat Email</label>
+               <div class="input-group">
+                  <div class="input-group-append">
+                     <i class="fal fa-envelope"></i>
+                  </div>
+                  <input type="email" id="mail" class="input-control inv" placeholder="Alamat Email Kamu" required>
+               </div>
+               
+               <label for="pass">Password</label>
+               <div class="input-group">
+                  <div class="input-group-append">
+                     <i class="fal fa-lock-alt"></i>
+                  </div>
+                  <input type="password" id="pass" class="input-control" placeholder="Password Kamu" required>
+               </div>
+               <div class="input-group">
+                  <div class="input-group-append">
+                     <i class="fal fa-lock-alt"></i>
+                  </div>
+                  <input type="password" id="pass2" class="input-control" placeholder="Ulangi Password Kamu" required>
+               </div>
+               
+               
+               <button type="sumbit" onclick="sumbit()"><i class="fad fa-sign-in"></i> Login</button>
+               <br>
+               <center>
+                  <small>Belum mempunyai akun?<br><a href="" target="_blank">Daftar Sekarang</a></small>
+               </center>
+            </form>
+            
+         </div>
+      </div>
+      
+      <!--Javascript-->
+      <script src="js/stylesheet.js" type="text/javascript"></script>
+      <!--FontAwesome icon-->
+      <script src="js/kit.fontawesome.js"></script>
+   </body>
+</html>

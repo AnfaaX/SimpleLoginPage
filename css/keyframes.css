@@ -1,0 +1,12 @@
+@keyframes body{0%{opacity:0;}100%{opacity:1;}}
+@-moz-keyframes body{0%{opacity:0;}100%{opacity:1;}}
+@-webkit-keyframes body{0%{opacity:0;}100%{opacity:1;}}
+
+@keyframes form{
+   0%{
+      transform: translateY(-5000px);
+   }
+   100%{
+      transform: translateY(0);
+   }
+}

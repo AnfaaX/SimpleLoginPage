@@ -1,0 +1,155 @@
+@import url("keyframes.css");
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box; }
+
+:root {
+   --bg-gradient-gb: linear-gradient(90deg, rgba(0,150,255,1), rgba(0,255,150,1));
+   --primary-color: rgb(50,150,255);
+   --bg-color: rgb(255,255,255);
+   --font-color: rgb(50,50,50);
+   --dark: rgb(30,30,30);
+   --grey: rgb(50,50,50);
+   --white: rgb(255,255,255); }
+
+html {
+   line-height: 1.6; }
+
+body {
+   animation: body 1s linear forwards;
+   opacity: 0;
+   position: relative;
+   font-family: Sans-Serif;
+   margin: 0;
+   color: var(--font-color); }
+
+.sheet {
+   background: url("../img/m.png");
+   background-size: 100%;
+   background-position: center top;
+   background-repeat: no-repeat;
+   position: relative;
+   padding: 1rem;
+   width: 100%; }
+   
+   @media (min-width: 576px) {
+      .sheet{
+         background: url("../img/d.png");
+         background-size: 100%;
+         background-position: center top;
+         background-repeat: no-repeat;
+         max-width: 100%; }
+   }
+.sheet > .d-flex {
+   margin: 0 auto;
+   height: 100vh;
+   width: 100%;
+   display: flex; }
+   @media (min-width: 576px) {
+      .sheet > .d-flex {
+         height: 150vh;
+         max-width: 80%;
+      }
+      .form {
+         max-width: 60%;
+      }
+   }
+
+.sheet > .d-flex.justify-content-center {
+   justify-content: center; }
+
+.sheet > .d-flex.justify-content-center.align-items-center {
+   align-items: center; }
+   
+.form{
+   box-shadow: 0 0 15px rgba(0,0,0,0.1);
+   animation: form 2s linear forwards;
+   border-radius: 1rem;
+   transform: translateY(-5000px);
+   width: 100%;
+   background: var(--bg-color);
+   padding: 2rem; }
+   
+   .form > .input-group {
+      margin-top: 0.5rem;
+      display: block;
+      transition: all .5s;
+      width: 100%;
+      margin-bottom: 1rem;
+      position: relative;
+   }
+   .form > label {
+      font-size: 1.2rem;
+      margin: 1rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+   }
+   .form > .input-group:hover{
+      color: var(--font-color);
+   }
+   .form > .input-group > .input-group-append {
+      position: absolute;
+      padding: 0.8rem 1.2rem;
+   }
+   .form > .input-group > .input-group-append > i {
+      font-size: 1rem;
+   }
+   .form > .input-group > .input-control {
+      
+      width: 100%;
+      border-radius: 50px;
+      outline: none;
+      border: 1px solid #999;
+      color: var(--font-color);
+      padding: 1rem 1rem 1rem 3rem;
+      transition: .5s;
+   }
+   .form > .input-group > .input-control:hover{
+      border: 1px solid var(--grey);
+      box-shadow: 0 0 0 4px rgba(30,30,30,0.5);
+      color: var(--font-color);
+   }
+   .form > button{
+      margin: 1rem 0;
+   }
+   .form >  [type="sumbit"]{
+      user-select: none;
+      -moz-user-select:none;
+      -o-user-select: none;
+      transition: all .5s;
+      font-weight: 500;
+      width: 100%;
+      margin: 1rem 0;
+      border:1px solid var(--grey);
+      border-radius: 50px;
+      outline: none;
+      display: block;
+      padding: 1rem;
+      background-color: var(--white);
+   }
+   .form > [type="sumbit"]:hover,
+   .form > [type="sumbit"]:focus{
+      background-color: var(--grey);
+      color: var(--white);
+      box-shadow: 0 0 0 4px rgba(50,50,50,0.3);
+   }
+   .form > .input-group > .input-control.invalid{
+      border: 1px solid rgb(255,50,50);
+      box-shadow: 0 0 0 4px rgba(255,50,50,0.1);
+   }
+hr{
+   border: 0;
+   height: 1px;
+   background: #777;
+}
+small{
+   font-size: 80%;
+   color: var(--dark);
+   font-weight: 500;
+}
+small > a{
+   text-decoration: none;
+   color: rgb(0,150,255);
+}
